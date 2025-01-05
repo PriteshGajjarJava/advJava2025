@@ -1,0 +1,82 @@
+<HTML>
+    <head>
+        <style type="text/css">
+            /* Tag based CSS */
+            span {
+                color: green;
+            }
+             /* Class based CSS */
+            .center-align {
+                text-align: center;
+            }
+            /* ID based CSS */
+            #para1 {
+                color: blue;
+                margin-left: 10px;
+                display: none;
+            }
+            .main-container {
+                height: 50%;
+            }
+            .left-div {
+                width: 60%;
+                margin-bottom: 70px;
+                display: inline-block;
+            }
+            .right-div {
+                width: 40%;
+                margin-left: 50px;
+                display: inline;
+            }
+            .tech-table {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="text-align: right;">
+            <h4>Current date and time : <span id="time"></span></h4>
+        </div>
+
+        <h2 class="center-align"> We are learning <span>Advanced Java</span> right now </h2>
+
+        <div class="main-container">
+            <div class="left-div">
+                <table border="1" class="tech-table">
+                    <tr>
+                        <td>Client Side Tecnologies </td>
+                        <td><h5> HTML, CSS, JavaScript, jQuery </h5> </td>
+                    </tr>
+                    <tr>
+                        <td>Server Side Tecnologies </td>
+                        <td><h5> JSP, Servlet, Session, Cookies, ReST API </h5> </td>
+                    </tr>
+                    <tr>
+                        <td>Middleware </td>
+                        <td><h5> DBMS using JDBC, ORM </h5> </td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="right-div">
+                <img src="./communication.gif" height="300px"></img>
+            </div>
+        </div>
+
+        <p id="para1"> This is a paragram, which i want to hide. </p>
+    </body>
+    <script type="text/javascript">
+        setTime();
+
+        // JavaScript in-built function
+        setInterval(setTime, 1000);// Call setTime() function repeatedly after ever 1sec
+
+        function setTime() {
+            var date = new Date();
+            // DOM manipulation
+            var timeSpan = document.getElementById('time');
+            timeSpan.innerHTML = date;
+            console.log("Date is: " + date);
+        }
+    </script>
+</HTML>

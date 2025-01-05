@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function add(n1, n2) {
+                var ans = Number(n1) + Number(n2);
+                var obj = document.getElementById('result');
+                obj.innerHTML = "Result is " + ans;
+                console.log(ans);
+            }
+            function checkBtn(n1, n2) {
+                var btnObj = document.getElementById('addBtn');
+                if (n1 && n2) {
+                    btnObj.removeAttribute('disabled');
+                } else {
+                    btnObj.setAttribute('disabled', true);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="number" id="num1" placeholder="Enter Number 1" autofocus oninput="checkBtn(num1.value,num2.value)"/>
+        <input type="number" id="num2" placeholder="Enter Number 2" autofocus oninput="checkBtn(num1.value,num2.value)"/>
+        <button id="addBtn" onclick="add(num1.value, num2.value)" disabled> Add Numbers </button>
+        <h4  id="result"> </h4>
+    </body>
+</html>

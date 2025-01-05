@@ -1,0 +1,25 @@
+<HTML>
+    <head>
+        <script type="text/javascript">
+            function showWelcome() {
+                var obj = document.getElementById('name');
+                window.alert("Hey " + obj.value + "! Thanks for clicking!");
+            }
+            function enableBtn() {
+                var obj = document.getElementById('name');
+                if (obj.value) {
+                    document.getElementById('btn1').removeAttribute('disabled');
+                } else {
+                    document.getElementById('btn1').setAttribute('disabled', true);
+                }
+
+            }
+        </script>
+    </head>
+
+    <body>
+        Enter your name:
+        <input type="text" id="name" placeholder="Enter Name" autofocus oninput="enableBtn()"/>
+        <button id="btn1" onclick="showWelcome()" disabled> Click Me... </button>
+    </body>
+</HTML>
