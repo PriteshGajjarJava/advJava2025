@@ -1,0 +1,18 @@
+<HTML>
+    <head>
+        <script type="text/javascript">
+            function changeColor(type) {
+                var btnObj = document.getElementById('btn');
+
+                if (type == 1) {
+                    btnObj.style.backgroundColor = 'green';
+                } else {
+                    btnObj.style.backgroundColor = 'yellow';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onmouseover="changeColor(1)" onmouseleave="changeColor(2)" id="btn"> Click Me... </button>
+    </body>
+</HTML>

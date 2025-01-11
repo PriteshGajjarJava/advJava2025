@@ -1,0 +1,55 @@
+<HTML>
+    <head>
+        <link href="./bootstrap.min.css" rel="stylesheet"/>
+        <style>
+            td {
+                padding-right: 20px;
+            }
+            th {
+                text-transform: uppercase;
+            }
+            table {
+                margin-left: 40px;
+                margin-top: 20px;
+            }
+        </style>
+        <script type="text/javascript">
+            function calculate(n1, n2, op) {
+                var ans = 0;
+                switch (op) {
+                    case '+': ans = Number(n1)+Number(n2); break;
+                    case '-': ans = Number(n1)-Number(n2); break;
+                    case '*': ans = Number(n1)*Number(n2); break;
+                    case '/': ans = Number(n1)/Number(n2);  break;
+                }
+                var res = document.getElementById('result');
+                res.value = ans;
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th> Number 1</th>
+                <th> Op </th>
+                <th> Number 2 </th>
+                <th></th>
+                <th> Result </th>
+            </tr>
+            <tr>
+                <td><input type="number" id="num1" autofocus/></td>
+                <td>
+                    <select id="op" onchange="calculate(num1.value, num2.value,op.value)">
+                        <option value="+"> + </option>
+                        <option value="-"> - </option>
+                        <option value="*"> * </option>
+                        <option value="/"> / </option>
+                    </select>
+                </td>
+                <td> <input type="number" id="num2"/> </td>
+                <td><button onclick="calculate(num1.value, num2.value,op.value)"> = </button></td>
+                <td><input type='number' id='result' readonly/></td>
+            </tr>
+        </table>
+    </body>
+</HTML>

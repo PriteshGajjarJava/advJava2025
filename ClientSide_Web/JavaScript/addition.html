@@ -19,7 +19,7 @@
     </head>
     <body>
         <input type="number" id="num1" placeholder="Enter Number 1" autofocus oninput="checkBtn(num1.value,num2.value)"/>
-        <input type="number" id="num2" placeholder="Enter Number 2" autofocus oninput="checkBtn(num1.value,num2.value)"/>
+        <input type="number" id="num2" placeholder="Enter Number 2" oninput="checkBtn(num1.value,num2.value)"/>
         <button id="addBtn" onclick="add(num1.value, num2.value)" disabled> Add Numbers </button>
         <h4  id="result"> </h4>
     </body>

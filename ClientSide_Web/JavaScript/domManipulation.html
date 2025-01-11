@@ -1,0 +1,19 @@
+<html>
+    <style>
+        button {
+            margin-left: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        function addBtn(val) {
+            var parent = document.getElementsByTagName('body')[0];
+            var newElement = document.createElement('button');
+            newElement.innerHTML = val;
+            parent.appendChild(newElement);
+        }
+    </script>
+    <body>
+        <input type="number" min="1" max="10" id="num" autofocus value="1"/>
+        <button id="btn" onclick="addBtn(num.value)"> Add Number </button>
+    </body>
+</html>
