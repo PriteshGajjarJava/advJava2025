@@ -5,6 +5,26 @@
         }
     </style>
     <script type="text/javascript">
+        function highlightBtn(val) {
+            var arr = document.getElementsByTagName('button');
+            for (var i=0; i<arr.length; i++) {
+                if (arr[i].innerHTML == val) {
+                    arr[i].style.backgroundColor = 'Orange';
+                } else {
+                    arr[i].style.backgroundColor = 'initial';
+                }
+            }
+        }
+        function removeBtn(val) {
+            var arr = document.getElementsByTagName('button');
+            var bodyTag = document.getElementsByTagName('body')[0];
+            for (var i=0; i<arr.length; i++) {
+                if (arr[i].innerHTML == val) {
+                    bodyTag.removeChild(arr[i]);
+                    i--;
+                }
+            }
+        }
         function addBtn(val) {
             var parent = document.getElementsByTagName('body')[0];
             var newElement = document.createElement('button');
@@ -15,5 +35,9 @@
     <body>
         <input type="number" min="1" max="10" id="num" autofocus value="1"/>
         <button id="btn" onclick="addBtn(num.value)"> Add Number </button>
+        <button id="btn" onclick="highlightBtn(num.value)"> Highlight </button>
+        <button id="btn" onclick="removeBtn(num.value)"> Remove Number </button>
+        <BR>
+        <BR>
     </body>
 </html>

@@ -1,0 +1,60 @@
+<HTML>
+    <head>
+        <link rel="stylesheet" href="./bootstrap.min.css"/>
+        <style>
+            form {
+                margin-left: 100px;
+                margin-top: 50px;
+                width: 40%;
+            }
+            .hideError { display: none !important;}
+            .showError {
+                display: inline-block !important;
+            }
+            .error { color: red;}
+        </style>
+        <script type="text/javascript">
+            function validateUser() {
+               var nameObj = document.getElementById('name');
+               var name = nameObj.value;
+               var regEx = /^[a-zA-Z\\s]*$/;
+               if(name.match(regEx)== null) {
+                document.getElementById('invalidName').classList.add('showError');
+               } else {
+                document.getElementById('invalidName').classList.remove('showError');
+                //document.getElementById('invalidName').classList.add('hideError');
+               }
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="./submit.jsp" class="form-group">
+            <div class="form-group row">
+                <label for="name" class="col-md-3">User Name </label>
+                <div>
+                    <input class="form-control col-md-9" onchange="validateUser()" type="text" placeholder="Enter Name" autofocus required id="name" name="userName"/>
+                    <span id="invalidName" class="error" style="display: none;">Name is invalid</span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="bDate" class="col-md-3">Birth Date </label>
+                <input class="form-control col-md-9" type="date" placeholder="Enter BirthDate" required id="bDate" name="birthDate"/>
+            </div>
+            <div class="form-group row">
+                <label for="phNo" class="col-md-3">Phone Number </label>
+                <input class="form-control col-md-9" type="text" placeholder="Enter Phone Number" required id="phNo" name="phNo"/>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-md-3">Email </label>
+                <input class="form-control col-md-9" type="text" placeholder="Enter Email" required id="email" name="email"/>
+            </div>
+            <div class="form-group row">
+                <label for="address" class="col-md-3">Address </label>
+                <textarea class="form-control col-md-9" id="address" name="address" placeholder="Enter Address" rows="2" cols="50"></textarea>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary" type="submit" > Submit </button>
+            </div>
+        </form>
+    </body>
+</HTML>

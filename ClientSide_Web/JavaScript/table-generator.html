@@ -1,0 +1,28 @@
+<html>
+    <script type="text/javascript">
+        function generateTable(num) {
+            var existingTable = document.getElementsByTagName('table');
+            var bodyTag = document.getElementsByTagName('body')[0];
+
+            if(existingTable.length > 0) {
+                bodyTag.removeChild(existingTable[0]);
+            }
+            var tableTag = document.createElement('table');
+            tableTag.setAttribute('border', 1);
+            bodyTag.appendChild(tableTag);
+
+            for (var i=1; i<=10; i++) {
+                var data = Number(num) * i;
+                var trTag = document.createElement('tr');
+                var tdTag = document.createElement('td');
+                tdTag.innerHTML = data;
+                tableTag.appendChild(trTag);
+                trTag.appendChild(tdTag);
+            }
+        }
+    </script>
+    <body>
+        <input type="number" placeholder="Enter Number" id="num"/>
+        <button id="btn" onclick="generateTable(num.value)">Generate Table</button>
+    </body>
+</html>
