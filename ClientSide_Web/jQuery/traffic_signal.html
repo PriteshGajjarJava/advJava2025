@@ -1,0 +1,72 @@
+<HTML>
+    <head>
+        <link href="./bootstrap.min.css" rel="stylesheet"/>
+        <style>
+            .signalStand {
+                height: 500px;
+                width: 200px;
+                background-color: black;
+                margin: 100px;
+                position: absolute;
+            }
+            .redSignal {
+                background-color: red !important;
+            }
+            .greenSignal {
+                background-color: green !important;
+            }
+            .yellowSignal {
+                background-color: yellow !important;
+            }
+
+            .dot {
+                margin-left: 39px;
+                margin-top: 20px;
+                height: 125px;
+                width: 125px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+            }
+        </style>
+        <script type="text/javascript" src="./jquery-3.7.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                startTrafficSignal();
+                $('#red').hover(function() {
+                    $('body').append('<p> I am RED </p>');
+                });
+            });
+
+            function changeToGreen() {
+                $('#green').addClass('greenSignal');
+                $('.signalStand').css('border', '5px solid green');
+
+                $( '.signalStand').animate({ "left": "+=250px" }, "fast" );
+
+                $('#red').removeClass('redSignal');
+                setTimeout(changeToYellow, 3000);
+            }
+            function changeToYellow() {
+                $('#yellow').addClass('yellowSignal');
+                $('.signalStand').css('border', '5px solid yellow');
+
+                $('#green').removeClass('greenSignal');
+                setTimeout(startTrafficSignal, 1000);
+            }
+            function startTrafficSignal() {
+                $('#red').addClass('redSignal');
+                $('.signalStand').css('border', '5px solid red');
+                $('#yellow').removeClass('yellowSignal');
+                setTimeout(changeToGreen, 5000);
+            }
+        </script>
+    </head>
+    <body onload="startTrafficSignal()">
+        <div class="signalStand">
+            <span class="dot" id="red" title="RED" data-toggle="tooltip"></span>
+            <span class="dot" id="yellow"></span>
+            <span class="dot" id="green"></span>
+        </div>
+    </body>
+</HTML>

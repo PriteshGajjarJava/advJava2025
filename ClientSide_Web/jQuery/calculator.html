@@ -13,7 +13,18 @@
                 margin-top: 20px;
             }
         </style>
+        <script type="text/javascript" src="./jquery-3.7.1.min.js"></script>
         <script type="text/javascript">
+            $(document).ready(function(){
+                $('button').click(function() {
+                    calculate($('#num1').val(), $('#num2').val(), $('#op').val());
+                });
+
+                $('#op').on('change', function() {
+                    calculate($('#num1').val(), $('#num2').val(), $('#op').val());
+                });
+            });
+
             function calculate(n1, n2, op) {
                 var ans = 0;
                 switch (op) {
@@ -22,8 +33,7 @@
                     case '*': ans = Number(n1)*Number(n2); break;
                     case '/': ans = Number(n1)/Number(n2);  break;
                 }
-                var res = document.getElementById('result');
-                res.value = ans;
+                $('#result').val(ans);
             }
         </script>
     </head>
@@ -35,12 +45,12 @@
             <tr>
                 <td><input type="number" id="num1" autofocus/></td>
                 <td>
-                    <select id="op" onchange="calculate(num1.value, num2.value,op.value)">
+                    <select id="op">
                         <option value="+"> + </option> <option value="-"> - </option> <option value="*"> * </option><option value="/"> / </option>
                     </select>
                 </td>
                 <td> <input type="number" id="num2"/> </td>
-                <td><button onclick="calculate(num1.value, num2.value,op.value)"> = </button></td>
+                <td><button> = </button></td>
                 <td><input type='number' id='result' readonly/></td>
             </tr>
         </table>

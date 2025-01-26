@@ -1,0 +1,24 @@
+<HTML>
+    <head>
+        <script type="text/javascript" src="./jquery-3.7.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#name').on("input", function() {
+                    if($(this).val().length === 0) {
+                        $('#btn').prop('disabled', true);
+                    } else {
+                        $('#btn').removeAttr('disabled');
+                    }
+                });
+                $('#btn').click(function() {
+                    var userName = $('#name').val();
+                    window.alert("Hi " + userName + ". Welcome to jQuery!!!");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <input type="text" id="name" placeholder="Enter your name"/>
+        <button id="btn" disabled="true"> Say Welcome ... </button>
+    </body>
+</HTML>
