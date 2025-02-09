@@ -1,0 +1,37 @@
+<HTML>
+<head>
+<link rel="stylesheet" href="bootstrap.min.css" />
+<style type="text/css">
+	.container {
+		width: 30%;
+		margin-left: 35%;
+		margin-top: 10%;
+	}
+</style>
+</head>
+
+<body>
+	<form class='container' action="./login-jstl.jsp">
+		<!-- Email input -->
+		<div data-mdb-input-init class="form-outline mb-4">
+			<input type="text" id="user" class="form-control" 
+				placeholder="Enter User Name"
+				name="user" />
+			<label class="form-label" for="user">UserName</label>
+		</div>
+
+		<!-- Password input -->
+		<div data-mdb-input-init class="form-outline mb-4">
+			<input type="password" id="pwd" class="form-control" name="pwd"
+				placeholder="Enter Password"/>
+			<label class="form-label" for="form2Example2">Password</label>
+		</div>
+
+		<!-- Submit button -->
+		<button data-mdb-button-init data-mdb-ripple-init
+			class="btn btn-primary btn-block mb-4">Sign in</button>
+
+
+	</form>
+</body>
+</HTML>

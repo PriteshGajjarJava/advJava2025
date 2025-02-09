@@ -1,0 +1,14 @@
+
+Eclipse JEE
+Change prespective to JEE
+Go to Server tab
+Add Tomcat Server -> Specify Tomcat Directory
+Dobule click on tomcat entry under Server tab
+Change Server location to "Use Tomcat Installation"
+Start Server
+check if Tomcat is running
+
+New -> Dynamic WEb Project -> Tick on Generate Deployment descriptor (Checkbox)
+Right click project and add JSP
+Right click project -> Run On Server
+
