@@ -1,15 +1,18 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2821
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fnil\fcharset0 Menlo-Regular;
-\f3\fnil\fcharset0 Menlo-Bold;\f4\fnil\fcharset0 Menlo-Italic;}
+\f3\fnil\fcharset0 Menlo-Bold;\f4\fnil\fcharset0 Menlo-Italic;\f5\fnil\fcharset0 Menlo-BoldItalic;
+}
 {\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red127\green0\blue85;\red38\green139\blue210;
 \red147\green161\blue161;\red0\green128\blue128;\red63\green127\blue127;\red128\green128\blue128;\red63\green127\blue95;
 \red63\green95\blue191;\red127\green0\blue127;\red42\green0\blue255;\red100\green100\blue100;\red0\green0\blue192;
-\red106\green62\blue62;}
+\red106\green62\blue62;\red38\green139\blue210;\red0\green128\blue128;\red63\green127\blue127;\red127\green0\blue127;
+\red42\green0\blue255;\red127\green0\blue85;\red0\green0\blue192;\red106\green62\blue62;}
 {\*\expandedcolortbl;;\csgray\c0;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c14902\c54510\c82353;
 \csgenericrgb\c57647\c63137\c63137;\csgenericrgb\c0\c50196\c50196;\csgenericrgb\c24706\c49804\c49804;\csgenericrgb\c50196\c50196\c50196;\csgenericrgb\c24706\c49804\c37255;
 \csgenericrgb\c24706\c37255\c74902;\csgenericrgb\c49804\c0\c49804;\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c39216\c39216\c39216;\csgenericrgb\c0\c0\c75294;
-\csgenericrgb\c41569\c24314\c24314;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww38200\viewh18380\viewkind0
+\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c14902\c54510\c82353;\csgenericrgb\c0\c50196\c50196;\csgenericrgb\c24706\c49804\c49804;\csgenericrgb\c49804\c0\c49804;
+\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c0\c0\c75294;\csgenericrgb\c41569\c24314\c24314;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww38200\viewh21600\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
 \f0\fs58 \cf0 	J2SE - Java 2 Standard Edition (Core Java)\
@@ -175,27 +178,27 @@ Hibernate:\
         \cf9 "\ul http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd\ulnone "\cf6 >\cf0 \
 \
 \cf6 <\cf7 \ul \ulc7 hibernate-configuration\cf6 \ulnone >\cf0 \
-	\cf6 <\cf7 \ul \ulc7 session-factory\cf6 \ulnone >\cf0 \
+	\cf6 <\cf7 \ul session-factory\cf6 \ulnone >\cf0 \
 		\cf10 <!-- JDBC Database connection settings -->\cf0 \
-		\cf6 <\cf7 \ul \ulc7 property\cf0 \ulnone  \cf11 name\cf0 =
+		\cf6 <\cf7 \ul property\cf0 \ulnone  \cf11 name\cf0 =
 \f4\i \cf12 "connection.driver_class"
 \f2\i0 \cf6 >\cf0 com.mysql.cj.jdbc.Driver\cf6 </\cf7 property\cf6 >\cf0 \
-		\cf6 <\cf7 \ul \ulc7 property\cf0 \ulnone  \cf11 name\cf0 =
+		\cf6 <\cf7 \ul property\cf0 \ulnone  \cf11 name\cf0 =
 \f4\i \cf12 "connection.url"
 \f2\i0 \cf6 >\cf0 jdbc:mysql://localhost/college\cf6 </\cf7 property\cf6 >\cf0 \
-		\cf6 <\cf7 \ul \ulc7 property\cf0 \ulnone  \cf11 name\cf0 =
+		\cf6 <\cf7 \ul property\cf0 \ulnone  \cf11 name\cf0 =
 \f4\i \cf12 "connection.username"
 \f2\i0 \cf6 >\cf0 root\cf6 </\cf7 property\cf6 >\cf0 \
-		\cf6 <\cf7 \ul \ulc7 property\cf0 \ulnone  \cf11 name\cf0 =
+		\cf6 <\cf7 \ul property\cf0 \ulnone  \cf11 name\cf0 =
 \f4\i \cf12 "connection.password"
 \f2\i0 \cf6 ></\cf7 property\cf6 >\cf0 \
 \
 		\cf10 <!-- Echo the SQL to \ul stdout\ulnone  -->\cf0 \
-		\cf6 <\cf7 \ul \ulc7 property\cf0 \ulnone  \cf11 name\cf0 =
+		\cf6 <\cf7 \ul property\cf0 \ulnone  \cf11 name\cf0 =
 \f4\i \cf12 "show_sql"
 \f2\i0 \cf6 >\cf0 true\cf6 </\cf7 property\cf6 >\cf0 \
 \
-		\cf6 <\cf7 \ul \ulc7 mapping\cf0 \ulnone  \cf11 class\cf0 =
+		\cf6 <\cf7 \ul mapping\cf0 \ulnone  \cf11 class\cf0 =
 \f4\i \cf12 "com.pga.Student"
 \f2\i0 \cf0  \cf6 />\cf0 \
 \
@@ -319,9 +322,11 @@ Hibernate:\
 \f2\i0 \cf0 ;\
 	\}\
 \}\
+\pard\pardeftab720\partightenfactor0
 
-\f0\fs58 \
+\f0\fs58 \cf0 \
 - Actual Hibernate Application code to add new Student record:\
+\pard\pardeftab720\partightenfactor0
 
 \f3\b\fs40 \cf3 package
 \f2\b0 \cf0  com.pga;\
@@ -360,11 +365,289 @@ Hibernate:\
 \}
 \f0\fs58 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b \cf0 \
+Spring Framework:\
+\
+	spring.io \
+	
+\f0\b0 \
+	Core features:\
+	- Dependency Injection  (IOC - Inversion of Control) \
+\
+\
+\
+	class Student \{\
+		int id;\
+		String name;\
+		float marks;\
+		\
+		Address add;\
+\
+		Student(int id, String name, float m, Address a) \{\
+			\
+		\}\
+	\}\
+\
+\
+	class Address \{\
+		String city, state;\
+		int pincode;\
+	\}\
+\
+	\
+	MVC: Model View Controller\
+\
+		Model - Data\
+		View  - UI\
+		Controller - Business logic \
+\
+\
+	Model < \'97\'97 > Controller < \'97 View \'97 >\
+\
+	Important modules of Spring Framework:\
+		- Web\
+		- Core\
+		- DAO (Data access object)\
+		- AOP (Aspect Oriented Programming)\
+\
+\
+	API architectural styles:\
+		1) SOAP - Simple Object Access Protocol.    (XML based)\
+		2) REST - Representational Starte Transfer.  (JSON Based)\
+\
+	pga.com/project1/students\
+\
+	<xml>\
+		<students>\
+			<student id = \'931\'94>\
+				<name> Sagar </name>\
+				<marks> 78 </marks>\
+			</student>\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 			<student id = \'932\'94>\
+				<name> Pga </name>\
+				<marks> 98 </marks>\
+			</student>\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 		</students>\
+	</xml>\
+\
+	REST\
+	JSON:\
+	\
+\{\
+  "students": [\
+    \{\
+      "id": 1,\
+      "name": "Sagar",\
+      "marks": 78\
+    \},\
+    \{\
+      "id": 2,\
+      "name": "Pga",\
+      "marks": 98\
+    \}\
+  ]\
+\}\
+\
+\
+	\{\
+  "students": [\
+    \{\
+      "id": 1,\
+      "name": "Sagar",\
+      "marks": 78\
+    \},\
+    \{\
+      "id": 2,\
+      "name": "Pga",\
+      "marks": 98\
+    \}\
+  ]\
+\}\
+\
+\
+\
+		REST v/s SOAP\
+\
+	1) REST is architectural style\
+		SOAP is a protocol \
+\
+	2) REST support multiple data formate. JSON is more popular.\
+		SOAP works only with XML\
+\
+	3) REST is faster than SOAP\
+\
+	4) REST supports caching, SOAP doesn\'92t\
+\
+	5)	Security for REST achieved using HTTPs, JWT, OAuth\
+		Security for SOAP is handled by built-in security (WS-security)\
+\
+	6) REST is used for fast API development.\
+		SOAP is still used by Banking applications.\
+\
+\
+Steps for \'93Spring Hello World\'94\
+Pre-requisite : Java , Eclipse, Maven plugin in eclipse \
+\
+- Create Maven Project with archetype (Quickstart)\
+- This will help you to have \'93pom.xml\'94 file in your project.\
+- In pom.xml file add dependencies for \'93Spring Core\'94 and \'93Spring Context\'94 as below\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs40 \cf0   <\cf16 dependencies\cf0 >\
+	 <\cf16 dependency\cf0 >\
+	    <\cf16 groupId\cf0 >org.springframework</\cf16 groupId\cf0 >\
+	    <\cf16 artifactId\cf0 >spring-context</\cf16 artifactId\cf0 >\
+	    <\cf16 version\cf0 >6.2.3</\cf16 version\cf0 >\
+	</\cf16 dependency\cf0 >\
+\
+	 <\cf16 dependency\cf0 >\
+	    <\cf16 groupId\cf0 >org.springframework</\cf16 groupId\cf0 >\
+	    <\cf16 artifactId\cf0 >spring-core</\cf16 artifactId\cf0 >\
+	    <\cf16 version\cf0 >6.2.3</\cf16 version\cf0 >\
+	</\cf16 dependency\cf0 >\
+  </\cf16 dependencies\cf0 >\
+\
+- If you don\'92t dependencies in project then right click -> Maven -> Update Project\
+\
+- Create \'93resources\'94 folder under /src/main/resources\
+\
+- Create new file named \'93beans.xml\'94 under /src/main/resources(Code of beans.xml as below)\
+\pard\pardeftab720\partightenfactor0
+\cf17 <\cf18 \ul \ulc18 beans\cf0 \ulnone  \cf19 xmlns\cf0 =
+\f4\i \cf20 "http://www.springframework.org/schema/beans"
+\f2\i0 \cf0 \
+	\cf19 xmlns:xsi\cf0 =
+\f4\i \cf20 "http://www.w3.org/2001/XMLSchema-instance"
+\f2\i0 \cf0 \
+	\cf19 xsi:schemaLocation\cf0 =
+\f4\i \cf20 "http://www.springframework.org/schema/beans
+\f2\i0 \cf0 \
+
+\f4\i \cf20 	\ul http://www.springframework.org/schema/beans/spring-beans-2.5.xsd\ulnone "
+\f2\i0 \cf17 >\cf0 \
+\
+	\cf17 <\cf18 bean\cf0  \cf19 id\cf0 =
+\f4\i \cf20 "studentBean"
+\f2\i0 \cf0  \cf19 class\cf0 =
+\f4\i \cf20 "com.pga.Student"
+\f2\i0 \cf17 >\cf0 \
+		\cf17 <\cf18 property\cf0  \cf19 name\cf0 =
+\f4\i \cf20 "name"
+\f2\i0 \cf0  \cf19 value\cf0 =
+\f4\i \cf20 "Mkyong"
+\f2\i0 \cf0  \cf17 />\cf0 \
+	\cf17 </\cf18 bean\cf17 >\cf0 \
+\
+\cf17 </\cf18 beans\cf17 >\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs58 \cf0 \
+- Create package named \'93com.pga\'94\
+- Add Student class with field name (getter, setter, constructor)\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs40 \cf21 package
+\f2\b0 \cf0  com.pga;\
+\
+
+\f3\b \cf21 public
+\f2\b0 \cf0  
+\f3\b \cf21 class
+\f2\b0 \cf0  Student \{\
+	
+\f3\b \cf21 private
+\f2\b0 \cf0  String \cf22 name\cf0 ;\
+\
+	\
+	
+\f3\b \cf21 public
+\f2\b0 \cf0  Student(String \cf23 name\cf0 ) \{\
+		
+\f3\b \cf21 super
+\f2\b0 \cf0 ();\
+		
+\f3\b \cf21 this
+\f2\b0 \cf0 .\cf22 name\cf0  = \cf23 name\cf0 ;\
+	\}\
+	
+\f3\b \cf21 public
+\f2\b0 \cf0  Student() \{\}\
+\
+	
+\f3\b \cf21 public
+\f2\b0 \cf0  String getName() \{\
+		
+\f3\b \cf21 return
+\f2\b0 \cf0  \cf22 name\cf0 ;\
+	\}\
+\
+	
+\f3\b \cf21 public
+\f2\b0 \cf0  
+\f3\b \cf21 void
+\f2\b0 \cf0  setName(String \cf23 name\cf0 ) \{\
+		
+\f3\b \cf21 this
+\f2\b0 \cf0 .\cf22 name\cf0  = \cf23 name\cf0 ;\
+	\}\
+	\
+	
+\f3\b \cf21 public
+\f2\b0 \cf0  
+\f3\b \cf21 void
+\f2\b0 \cf0  sayHello() \{\
+		System.
+\f5\i\b \cf22 out
+\f2\i0\b0 \cf0 .println(\cf20 "Hello - "\cf0  + 
+\f3\b \cf21 this
+\f2\b0 \cf0 .\cf22 name\cf0 );\
+	\}\
+\}\
+\
+- We can have new file \'93SpringAppDemo.java\'94 which will have code for \'93Spring initialization\'94 using Application Context and we will try to read \
+Student bean named as \'93studentBean\'94.\
+\
+
+\f3\b \cf21 package
+\f2\b0 \cf0  com.pga;\
+\
+
+\f3\b \cf21 import
+\f2\b0 \cf0  org.springframework.context.ApplicationContext;\
+
+\f3\b \cf21 import
+\f2\b0 \cf0  org.springframework.context.support.ClassPathXmlApplicationContext;\
+\
+
+\f3\b \cf21 public
+\f2\b0 \cf0  
+\f3\b \cf21 class
+\f2\b0 \cf0  SpringAppDemo \{\
+	
+\f3\b \cf21 public
+\f2\b0 \cf0  
+\f3\b \cf21 static
+\f2\b0 \cf0  
+\f3\b \cf21 void
+\f2\b0 \cf0  main(String[] \cf23 args\cf0 ) \{\
+		ApplicationContext \cf23 \ul \ulc23 context\cf0 \ulnone  = 
+\f3\b \cf21 new
+\f2\b0 \cf0  ClassPathXmlApplicationContext(\
+				\cf20 "beans.xml"\cf0 );\
+		\
+		Student \cf23 s\cf0  = (Student) \cf23 context\cf0 .getBean(\cf20 "studentBean"\cf0 );\
+		\cf23 s\cf0 .sayHello();\
+	\}\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs58 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 \
-\
-\
-\
-\
 \
 \
 \
