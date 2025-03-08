@@ -1,15 +1,17 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2821
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fnil\fcharset0 Menlo-Regular;
 \f3\fnil\fcharset0 Menlo-Bold;\f4\fnil\fcharset0 Menlo-Italic;\f5\fnil\fcharset0 Menlo-BoldItalic;
-\f6\fswiss\fcharset0 Arial-BoldMT;}
+}
 {\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red127\green0\blue85;\red38\green139\blue210;
 \red147\green161\blue161;\red0\green128\blue128;\red63\green127\blue127;\red128\green128\blue128;\red63\green127\blue95;
 \red63\green95\blue191;\red127\green0\blue127;\red42\green0\blue255;\red100\green100\blue100;\red0\green0\blue192;
-\red106\green62\blue62;\red255\green255\blue255;\red0\green0\blue0;\red93\green168\blue49;}
+\red106\green62\blue62;\red38\green139\blue210;\red0\green128\blue128;\red63\green127\blue127;\red127\green0\blue127;
+\red42\green0\blue255;\red127\green0\blue85;\red0\green0\blue192;\red106\green62\blue62;}
 {\*\expandedcolortbl;;\csgray\c0;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c14902\c54510\c82353;
 \csgenericrgb\c57647\c63137\c63137;\csgenericrgb\c0\c50196\c50196;\csgenericrgb\c24706\c49804\c49804;\csgenericrgb\c50196\c50196\c50196;\csgenericrgb\c24706\c49804\c37255;
 \csgenericrgb\c24706\c37255\c74902;\csgenericrgb\c49804\c0\c49804;\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c39216\c39216\c39216;\csgenericrgb\c0\c0\c75294;
-\csgenericrgb\c41569\c24314\c24314;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;\cssrgb\c42745\c70196\c24706;}
+\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c14902\c54510\c82353;\csgenericrgb\c0\c50196\c50196;\csgenericrgb\c24706\c49804\c49804;\csgenericrgb\c49804\c0\c49804;
+\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c0\c0\c75294;\csgenericrgb\c41569\c24314\c24314;}
 \paperw11900\paperh16840\margl1440\margr1440\vieww38200\viewh21600\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
@@ -422,11 +424,13 @@ Spring Framework:\
 				<name> Sagar </name>\
 				<marks> 78 </marks>\
 			</student>\
-			<student id = \'932\'94>\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 			<student id = \'932\'94>\
 				<name> Pga </name>\
 				<marks> 98 </marks>\
 			</student>\
-		</students>\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 		</students>\
 	</xml>\
 \
 	REST\
@@ -470,7 +474,7 @@ Spring Framework:\
 	1) REST is architectural style\
 		SOAP is a protocol \
 \
-	2) REST support multiple data formats. JSON is more popular.\
+	2) REST support multiple data formate. JSON is more popular.\
 		SOAP works only with XML\
 \
 	3) REST is faster than SOAP\
@@ -492,51 +496,52 @@ Pre-requisite : Java , Eclipse, Maven plugin in eclipse \
 - In pom.xml file add dependencies for \'93Spring Core\'94 and \'93Spring Context\'94 as below\
 \pard\pardeftab720\partightenfactor0
 
-\f2\fs40 \cf0   <\cf4 dependencies\cf0 >\
-	 <\cf4 dependency\cf0 >\
-	    <\cf4 groupId\cf0 >org.springframework</\cf4 groupId\cf0 >\
-	    <\cf4 artifactId\cf0 >spring-context</\cf4 artifactId\cf0 >\
-	    <\cf4 version\cf0 >6.2.3</\cf4 version\cf0 >\
-	</\cf4 dependency\cf0 >\
+\f2\fs40 \cf0   <\cf16 dependencies\cf0 >\
+	 <\cf16 dependency\cf0 >\
+	    <\cf16 groupId\cf0 >org.springframework</\cf16 groupId\cf0 >\
+	    <\cf16 artifactId\cf0 >spring-context</\cf16 artifactId\cf0 >\
+	    <\cf16 version\cf0 >6.2.3</\cf16 version\cf0 >\
+	</\cf16 dependency\cf0 >\
 \
-	 <\cf4 dependency\cf0 >\
-	    <\cf4 groupId\cf0 >org.springframework</\cf4 groupId\cf0 >\
-	    <\cf4 artifactId\cf0 >spring-core</\cf4 artifactId\cf0 >\
-	    <\cf4 version\cf0 >6.2.3</\cf4 version\cf0 >\
-	</\cf4 dependency\cf0 >\
-  </\cf4 dependencies\cf0 >\
+	 <\cf16 dependency\cf0 >\
+	    <\cf16 groupId\cf0 >org.springframework</\cf16 groupId\cf0 >\
+	    <\cf16 artifactId\cf0 >spring-core</\cf16 artifactId\cf0 >\
+	    <\cf16 version\cf0 >6.2.3</\cf16 version\cf0 >\
+	</\cf16 dependency\cf0 >\
+  </\cf16 dependencies\cf0 >\
 \
 - If you don\'92t dependencies in project then right click -> Maven -> Update Project\
 \
 - Create \'93resources\'94 folder under /src/main/resources\
 \
 - Create new file named \'93beans.xml\'94 under /src/main/resources(Code of beans.xml as below)\
-\cf6 <\cf7 \ul beans\cf0 \ulnone  \cf11 xmlns\cf0 =
-\f4\i \cf12 "http://www.springframework.org/schema/beans"
+\pard\pardeftab720\partightenfactor0
+\cf17 <\cf18 \ul \ulc18 beans\cf0 \ulnone  \cf19 xmlns\cf0 =
+\f4\i \cf20 "http://www.springframework.org/schema/beans"
 \f2\i0 \cf0 \
-	\cf11 xmlns:xsi\cf0 =
-\f4\i \cf12 "http://www.w3.org/2001/XMLSchema-instance"
+	\cf19 xmlns:xsi\cf0 =
+\f4\i \cf20 "http://www.w3.org/2001/XMLSchema-instance"
 \f2\i0 \cf0 \
-	\cf11 xsi:schemaLocation\cf0 =
-\f4\i \cf12 "http://www.springframework.org/schema/beans
+	\cf19 xsi:schemaLocation\cf0 =
+\f4\i \cf20 "http://www.springframework.org/schema/beans
 \f2\i0 \cf0 \
 
-\f4\i \cf12 	\cf12 \ul \ulc7 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd\cf12 \ulnone "
-\f2\i0 \cf6 >\cf0 \
+\f4\i \cf20 	\ul http://www.springframework.org/schema/beans/spring-beans-2.5.xsd\ulnone "
+\f2\i0 \cf17 >\cf0 \
 \
-	\cf6 <\cf7 bean\cf0  \cf11 id\cf0 =
-\f4\i \cf12 "studentBean"
-\f2\i0 \cf0  \cf11 class\cf0 =
-\f4\i \cf12 "com.pga.Student"
-\f2\i0 \cf6 >\cf0 \
-		\cf6 <\cf7 property\cf0  \cf11 name\cf0 =
-\f4\i \cf12 "name"
-\f2\i0 \cf0  \cf11 value\cf0 =
-\f4\i \cf12 "Mkyong"
-\f2\i0 \cf0  \cf6 />\cf0 \
-	\cf6 </\cf7 bean\cf6 >\cf0 \
+	\cf17 <\cf18 bean\cf0  \cf19 id\cf0 =
+\f4\i \cf20 "studentBean"
+\f2\i0 \cf0  \cf19 class\cf0 =
+\f4\i \cf20 "com.pga.Student"
+\f2\i0 \cf17 >\cf0 \
+		\cf17 <\cf18 property\cf0  \cf19 name\cf0 =
+\f4\i \cf20 "name"
+\f2\i0 \cf0  \cf19 value\cf0 =
+\f4\i \cf20 "Mkyong"
+\f2\i0 \cf0  \cf17 />\cf0 \
+	\cf17 </\cf18 bean\cf17 >\cf0 \
 \
-\cf6 </\cf7 beans\cf6 >\cf0 \
+\cf17 </\cf18 beans\cf17 >\cf0 \
 \pard\pardeftab720\partightenfactor0
 
 \f0\fs58 \cf0 \
@@ -544,61 +549,61 @@ Pre-requisite : Java , Eclipse, Maven plugin in eclipse \
 - Add Student class with field name (getter, setter, constructor)\
 \pard\pardeftab720\partightenfactor0
 
-\f3\b\fs40 \cf3 package
+\f3\b\fs40 \cf21 package
 \f2\b0 \cf0  com.pga;\
 \
 
-\f3\b \cf3 public
+\f3\b \cf21 public
 \f2\b0 \cf0  
-\f3\b \cf3 class
+\f3\b \cf21 class
 \f2\b0 \cf0  Student \{\
 	
-\f3\b \cf3 private
-\f2\b0 \cf0  String \cf14 name\cf0 ;\
+\f3\b \cf21 private
+\f2\b0 \cf0  String \cf22 name\cf0 ;\
 \
 	\
 	
-\f3\b \cf3 public
-\f2\b0 \cf0  Student(String \cf15 name\cf0 ) \{\
+\f3\b \cf21 public
+\f2\b0 \cf0  Student(String \cf23 name\cf0 ) \{\
 		
-\f3\b \cf3 super
+\f3\b \cf21 super
 \f2\b0 \cf0 ();\
 		
-\f3\b \cf3 this
-\f2\b0 \cf0 .\cf14 name\cf0  = \cf15 name\cf0 ;\
+\f3\b \cf21 this
+\f2\b0 \cf0 .\cf22 name\cf0  = \cf23 name\cf0 ;\
 	\}\
 	
-\f3\b \cf3 public
+\f3\b \cf21 public
 \f2\b0 \cf0  Student() \{\}\
 \
 	
-\f3\b \cf3 public
+\f3\b \cf21 public
 \f2\b0 \cf0  String getName() \{\
 		
-\f3\b \cf3 return
-\f2\b0 \cf0  \cf14 name\cf0 ;\
+\f3\b \cf21 return
+\f2\b0 \cf0  \cf22 name\cf0 ;\
 	\}\
 \
 	
-\f3\b \cf3 public
+\f3\b \cf21 public
 \f2\b0 \cf0  
-\f3\b \cf3 void
-\f2\b0 \cf0  setName(String \cf15 name\cf0 ) \{\
+\f3\b \cf21 void
+\f2\b0 \cf0  setName(String \cf23 name\cf0 ) \{\
 		
-\f3\b \cf3 this
-\f2\b0 \cf0 .\cf14 name\cf0  = \cf15 name\cf0 ;\
+\f3\b \cf21 this
+\f2\b0 \cf0 .\cf22 name\cf0  = \cf23 name\cf0 ;\
 	\}\
 	\
 	
-\f3\b \cf3 public
+\f3\b \cf21 public
 \f2\b0 \cf0  
-\f3\b \cf3 void
+\f3\b \cf21 void
 \f2\b0 \cf0  sayHello() \{\
 		System.
-\f5\i\b \cf14 out
-\f2\i0\b0 \cf0 .println(\cf12 "Hello - "\cf0  + 
-\f3\b \cf3 this
-\f2\b0 \cf0 .\cf14 name\cf0 );\
+\f5\i\b \cf22 out
+\f2\i0\b0 \cf0 .println(\cf20 "Hello - "\cf0  + 
+\f3\b \cf21 this
+\f2\b0 \cf0 .\cf22 name\cf0 );\
 	\}\
 \}\
 \
@@ -606,173 +611,41 @@ Pre-requisite : Java , Eclipse, Maven plugin in eclipse \
 Student bean named as \'93studentBean\'94.\
 \
 
-\f3\b \cf3 package
+\f3\b \cf21 package
 \f2\b0 \cf0  com.pga;\
 \
 
-\f3\b \cf3 import
+\f3\b \cf21 import
 \f2\b0 \cf0  org.springframework.context.ApplicationContext;\
 
-\f3\b \cf3 import
+\f3\b \cf21 import
 \f2\b0 \cf0  org.springframework.context.support.ClassPathXmlApplicationContext;\
 \
 
-\f3\b \cf3 public
+\f3\b \cf21 public
 \f2\b0 \cf0  
-\f3\b \cf3 class
+\f3\b \cf21 class
 \f2\b0 \cf0  SpringAppDemo \{\
 	
-\f3\b \cf3 public
+\f3\b \cf21 public
 \f2\b0 \cf0  
-\f3\b \cf3 static
+\f3\b \cf21 static
 \f2\b0 \cf0  
-\f3\b \cf3 void
-\f2\b0 \cf0  main(String[] \cf15 args\cf0 ) \{\
-		ApplicationContext \cf15 \ul \ulc15 context\cf0 \ulnone  = 
-\f3\b \cf3 new
+\f3\b \cf21 void
+\f2\b0 \cf0  main(String[] \cf23 args\cf0 ) \{\
+		ApplicationContext \cf23 \ul \ulc23 context\cf0 \ulnone  = 
+\f3\b \cf21 new
 \f2\b0 \cf0  ClassPathXmlApplicationContext(\
-				\cf12 "beans.xml"\cf0 );\
+				\cf20 "beans.xml"\cf0 );\
 		\
-		Student \cf15 s\cf0  = (Student) \cf15 context\cf0 .getBean(\cf12 "studentBean"\cf0 );\
-		\cf15 s\cf0 .sayHello();\
+		Student \cf23 s\cf0  = (Student) \cf23 context\cf0 .getBean(\cf20 "studentBean"\cf0 );\
+		\cf23 s\cf0 .sayHello();\
 	\}\
 \}\
-\
-\
-	REST:\
-	4 API endpoints	\
-\
-	Read book information\
-	GET 
-\f3\b https://pga.com/library/api/v1/books
-\f2\b0  	 (Aggregated Data)\
-		 [\{ book1 \}, \{book2\} \'85]\
-\
-	GET 
-\f3\b https://pga.com/library/api/v1/books/book1 
-\f2\b0 (Specific book information)\
-\
-\
-	Create new book (Add new book)\
-	POST 
-\f3\b https://pga.com/library/api/v1/books/book3\
-	
-\f2\b0 Payload\
-	\{\
-		\'93id\'94: \'93book3\'94,\
-		\'93name\'94: \'93Atomi Habits\'94,\
-		\'85\
-	\}\
-\
-	Update Book:\
-	PUT 
-\f3\b https://pga.com/library/api/v1/books/book2\
-\pard\pardeftab720\partightenfactor0
-\cf0 	
-\f2\b0 Payload\
-	\{\
-		\'93id\'94: \'93book2\'94,\
-
-\f3\b 		\'93price\'94: 350 // Updating price\
-
-\f2\b0 		\'85\
-	\}\
-\pard\pardeftab720\partightenfactor0
-\cf0 \
-	Delete book \
-	
-\f3\b Delete
-\f2\b0  
-\f3\b https://pga.com/library/api/v1/books/book1\
-
-\f2\b0 \
-	HTTP Response Status Code\
-\
-
-\f3\b 	1XX	Informational\
-	2XX	Successful\
-	3XX	Redirecation\
-	4XX	Client Error\
-	5XX 	Server Error\
-
-\f2\b0 \
-	200 - OK\
-\
-	400 - Bad request\
-	401 - Unauthorized\
-	403 - Forbidden\
-	404 - Page Not Found (URL is incorrect)\
-	\
-	500 - Internal Server error\
-	503 - Service unavailable \
-	504 - Gateway Timeout (n/w problem)\
-	\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
 \
 \pard\pardeftab720\partightenfactor0
 
 \f0\fs58 \cf0 \
-\
-	
-\f1\b Spring Hello World REST Tutorial by MkYong
-\f0\b0 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 \
-\
-https://mkyong.com/spring-boot/spring-rest-hello-world-example/\
-	\
-	// Setting up spring-boot environment	\
-\
-	1) Go to https://start.spring.io/\
-		Add dependency as \
-		- 
-\f6\b\fs34 \cb16 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec17 Spring Web\'a0
-\fs26 \cf16 \cb18 \strokec16 WEB
-\f0\b0\fs58 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
-		- 
-\f6\b\fs34 \cb16 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec17 H2 Database\'a0
-\fs26 \cf16 \cb18 \strokec16 SQL
-\fs34 \cf0 \cb16 \strokec17 \
-		- Spring Data JPA\'a0
-\fs26 \cf16 \cb18 \strokec16 SQL\
-\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-
-\f0\b0\fs58 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 	2) Click \'93Generate\'94 button -> You will get one .zip file in Downloads folder (unzip)\
-\
-	3) Go to eclipse -> Import -> Maven (Existing Maven Project) -> Select above folder \
-	New project will be created in background (You will get pom.xml)\
-\
-	// Coding steps\
-\
-	1) Create POJO class named \'93Book\'94\
-	2) Create interface named \'93BookRepository\'94 which extends \'93JpaRepository\'94\
-	3) Create Rest Controller (BookRestController)\
-	4) Main class (SpringBootApplication class) -> Initialize Bean named \'93initializeDatabase\'94 with 3 dummy records\
-	5) Run\
-	6) Verify using \'93Curl\'94 or \'93Postman\'94	\
-\
-	\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 \
 \
